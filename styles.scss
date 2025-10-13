@@ -1,5 +1,7 @@
 @use 'settings' as *;
 @use 'keyframes';
+@use 'components';
+@use 'tabs';
 
 * {
     box-sizing: border-box;
@@ -71,7 +73,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    width: $width;
     padding: 3rem 0 2rem 0;
     margin: auto;
 
@@ -84,6 +86,10 @@ header {
 
     nav ul {
         @include nav;
+
+        .red-btn {
+            font-weight: 400;
+        }
     }
 
     @media screen and (max-width: $breakpoint-ms) {
@@ -175,36 +181,36 @@ footer {
 
     .footer-container {
         padding: 2rem;
-        width: 80vw;
+        width: $width;
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 3.5rem;
+
+        @media screen and (max-width: $breakpoint-ms) {
+            padding: 3rem 2rem;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
     }
 
     nav {
         margin-right: auto;
 
+        @media screen and (max-width: $breakpoint-ms) {
+            margin: 0;
+        }
+
         ul {
             @include nav($white);
-        }
-    }
 
-    @media screen and (max-width: $breakpoint-ms) {
-        .footer-container {
-            padding: 3rem 2rem;
-        }
-
-        .footer-container,
-        ul {
-            flex-direction: column;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        nav {
-            margin: 0;
+            @media screen and (max-width: $breakpoint-ms) {
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+            }
         }
     }
 }
@@ -216,44 +222,72 @@ section {
 
 .full-width {
     @include section(100vw, 4.5rem 0);
-}
 
-button {
-    @include button;
-}
-
-.red-btn {
-    @include button($red, $white, $padding: 0.75rem 2.1rem);
-}
-
-.grey-btn {
-    @include button(#f7f7f7, #535260);
-
-    @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            border-color: #535260;
-            color: #535260;
+    @media screen and (max-width: $breakpoint-ms) {
+        p {
+            width: $width;
         }
     }
 }
 
-.centered-btn {
-    margin: auto;
-    width: auto;
+.decorated {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 
-    @media screen and (max-width: $breakpoint-s) {
-        padding: 0.9rem 1.4rem;
+    img {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: $breakpoint-ms) {
+        flex-direction: column-reverse;
+        gap: 3rem;
     }
 }
 
-form {
-    @include form;
+.hero-section {
+    position: relative;
+
+    .side-text {
+        @include side-text;
+    }
+
+    img {
+        padding: 0 2vw;
+        width: 50%;
+
+        @media screen and (max-width: $breakpoint-ms) {
+            width: 100%;
+            padding: 0 5vw;
+        }
+    }
+
+    .cta-area {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1.2rem;
+    }
 }
 
-.txt-input-container {
-    @include email-input-validation;
-}
+.newsletter {
+    @include section(100vw, 4.5rem 0, 6rem 0 0 0);
+    background: $blue;
 
-input[type="email"] {
-    @include form-field;
+    span {
+        display: block;
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 500;
+    }
+
+    h2 {
+        color: $white;
+        max-width: 400px;
+        margin: 2.5rem auto;
+    }
 }

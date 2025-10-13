@@ -6,20 +6,29 @@ $dark-blue: #242A45;
 $red: #fa5959;
 $dark-grey: #535260;
 $text-color: #a7a7ac;
+$separators: #d9d9d9;
 $transition: 0.4s;
 $breakpoint-md: 1024px;
 $breakpoint-ms: 800px;
 $breakpoint-s: 600px;
 $width: 80vw;
 
-@mixin section ($width: 80vw, $padding: 3rem 0) {
+@mixin section ($width: $width, $padding: 3rem 0, $margin: auto) {
     width: $width;
     padding: $padding;
+    margin: $margin;
+
+    p {
+        max-width: 550px;
+        text-align: center;
+        margin: auto;
+    }
 }
 
 @mixin nav ($txt: #535260) {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 3rem;
     padding: 0;
     margin: 0;
@@ -32,6 +41,7 @@ $width: 80vw;
         text-decoration: none;
         transition: $transition;
         color: $txt;
+        font-weight: 400;
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
@@ -134,5 +144,19 @@ $width: 80vw;
 
     @media screen and (max-width: $breakpoint-s) {
         width: 100%;
+    }
+}
+
+@mixin side-text ($padding: 0 0 0 10vw) {
+    width: 50%;
+    padding: $padding;
+
+    p {
+        text-align: left;
+        max-width: unset;
+    }
+
+    h2 {
+        text-align: left;
     }
 }
