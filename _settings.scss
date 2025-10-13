@@ -12,6 +12,11 @@ $breakpoint-ms: 800px;
 $breakpoint-s: 600px;
 $width: 80vw;
 
+@mixin section ($width: 80vw, $padding: 3rem 0) {
+    width: $width;
+    padding: $padding;
+}
+
 @mixin nav ($txt: #535260) {
     list-style: none;
     display: flex;

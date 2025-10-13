@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes labelBorder {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: var(--desired-width);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -215,6 +233,17 @@ footer nav ul a {
   footer nav {
     margin: 0;
   }
+}
+
+section {
+  width: 80vw;
+  padding: 3rem 0;
+  margin: auto;
+}
+
+.full-width {
+  width: 100vw;
+  padding: 4.5rem 0;
 }
 
 button {

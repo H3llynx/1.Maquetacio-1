@@ -1,5 +1,5 @@
 @use 'settings' as *;
-
+@use 'keyframes';
 
 * {
     box-sizing: border-box;
@@ -207,6 +207,15 @@ footer {
             margin: 0;
         }
     }
+}
+
+section {
+    @include section;
+    margin: auto;
+}
+
+.full-width {
+    @include section(100vw, 4.5rem 0);
 }
 
 button {
