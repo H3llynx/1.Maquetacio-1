@@ -41,7 +41,6 @@ $width: 80vw;
         text-decoration: none;
         transition: $transition;
         color: $txt;
-        font-weight: 400;
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
@@ -158,5 +157,16 @@ $width: 80vw;
 
     h2 {
         text-align: left;
+    }
+
+    @media screen and (max-width: $breakpoint-ms) {
+        padding: 0;
+        width: $width;
+
+        p,
+        h1,
+        h2 {
+            text-align: center;
+        }
     }
 }

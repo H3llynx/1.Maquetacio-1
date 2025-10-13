@@ -234,6 +234,13 @@ input[type=email]:user-invalid {
   border-top-right-radius: 12rem;
   z-index: 0;
 }
+@media screen and (max-width: 800px) {
+  .tab-container .tab-content ::before {
+    top: 7%;
+    width: 80%;
+    aspect-ratio: 16/11;
+  }
+}
 .tab-container .tab-content .side-text {
   width: 50%;
   padding: 0 10vw 0 5vw;
@@ -245,6 +252,17 @@ input[type=email]:user-invalid {
 .tab-container .tab-content .side-text h2 {
   text-align: left;
 }
+@media screen and (max-width: 800px) {
+  .tab-container .tab-content .side-text {
+    padding: 0;
+    width: 80vw;
+  }
+  .tab-container .tab-content .side-text p,
+  .tab-container .tab-content .side-text h1,
+  .tab-container .tab-content .side-text h2 {
+    text-align: center;
+  }
+}
 .tab-container .tab-content .side-text .tab-btn {
   margin: 2rem 0;
   width: auto;
@@ -252,11 +270,6 @@ input[type=email]:user-invalid {
 @media screen and (max-width: 800px) {
   .tab-container .tab-content .side-text .tab-btn {
     display: none;
-  }
-}
-@media screen and (max-width: 800px) {
-  .tab-container .tab-content .side-text {
-    padding: 0;
   }
 }
 .tab-container .tab-content .tab-img {
@@ -282,8 +295,8 @@ input[type=email]:user-invalid {
   }
 }
 @media screen and (max-width: 800px) {
-  .tab-container {
-    flex-direction: column;
+  .tab-container .tab-content {
+    flex-direction: column-reverse;
     align-items: center;
   }
 }
@@ -424,7 +437,6 @@ header nav ul a {
   text-decoration: none;
   transition: 0.4s;
   color: #535260;
-  font-weight: 400;
 }
 @media (hover: hover) and (pointer: fine) {
   header nav ul a:hover {
@@ -546,7 +558,6 @@ footer nav ul a {
   text-decoration: none;
   transition: 0.4s;
   color: #ffffff;
-  font-weight: 400;
 }
 @media (hover: hover) and (pointer: fine) {
   footer nav ul a:hover {
@@ -611,6 +622,24 @@ section {
 .hero-section {
   position: relative;
 }
+.hero-section::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 35%;
+  width: 38%;
+  aspect-ratio: 16/10;
+  background: #5265E1;
+  border-top-left-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+  z-index: 0;
+}
+@media screen and (max-width: 800px) {
+  .hero-section::before {
+    top: 17%;
+    width: 82%;
+  }
+}
 .hero-section .side-text {
   width: 50%;
   padding: 0 0 0 10vw;
@@ -621,6 +650,17 @@ section {
 }
 .hero-section .side-text h2 {
   text-align: left;
+}
+@media screen and (max-width: 800px) {
+  .hero-section .side-text {
+    padding: 0;
+    width: 80vw;
+  }
+  .hero-section .side-text p,
+  .hero-section .side-text h1,
+  .hero-section .side-text h2 {
+    text-align: center;
+  }
 }
 .hero-section img {
   padding: 0 2vw;
@@ -636,6 +676,11 @@ section {
   margin-top: 2rem;
   display: flex;
   gap: 1.2rem;
+}
+@media screen and (max-width: 800px) {
+  .hero-section .cta-area {
+    justify-content: center;
+  }
 }
 
 .newsletter {

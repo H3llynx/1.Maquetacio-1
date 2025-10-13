@@ -57,6 +57,12 @@
             border-bottom-right-radius: 12rem;
             border-top-right-radius: 12rem;
             z-index: 0;
+
+            @media screen and (max-width: $breakpoint-ms) {
+                top: 7%;
+                width: 80%;
+                aspect-ratio: 16/11;
+            }
         }
 
         .side-text {
@@ -71,10 +77,6 @@
                 }
             }
 
-
-            @media screen and (max-width: $breakpoint-ms) {
-                padding: 0;
-            }
         }
 
         .tab-img {
@@ -98,11 +100,11 @@
                 width: 100vw;
             }
         }
-    }
 
-    @media screen and (max-width: $breakpoint-ms) {
-        flex-direction: column;
-        align-items: center;
+        @media screen and (max-width: $breakpoint-ms) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 }
 

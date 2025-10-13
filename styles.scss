@@ -250,6 +250,24 @@ section {
 .hero-section {
     position: relative;
 
+    &::before {
+        content: " ";
+        position: absolute;
+        right: 0;
+        top: 35%;
+        width: 38%;
+        aspect-ratio: 16/10;
+        background: $blue;
+        border-top-left-radius: 12rem;
+        border-bottom-left-radius: 12rem;
+        z-index: 0;
+
+        @media screen and (max-width: $breakpoint-ms) {
+            top: 17%;
+            width: 82%;
+        }
+    }
+
     .side-text {
         @include side-text;
     }
@@ -268,6 +286,10 @@ section {
         margin-top: 2rem;
         display: flex;
         gap: 1.2rem;
+
+        @media screen and (max-width: $breakpoint-ms) {
+            justify-content: center;
+        }
     }
 }
 
