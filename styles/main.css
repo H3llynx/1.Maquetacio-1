@@ -47,12 +47,12 @@ section {
         letter-spacing: 5px;
         font-size: 0.8rem;
         text-transform: uppercase;
-        color: #ffffff;
+        color: var(--white);
         font-weight: 500;
     }
 
     & h2 {
-        color: #ffffff;
+        color: var(--white);
         max-width: 400px;
         margin: 2.5rem auto;
     }
@@ -368,7 +368,6 @@ summary {
     #tab1:checked~#label1::after,
     #tab2:checked~#label2::after,
     #tab3:checked~#label3::after {
-        content: " ";
         --desired-width: 45%;
         left: 50%;
         height: 4px;

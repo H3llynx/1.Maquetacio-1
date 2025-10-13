@@ -13,7 +13,7 @@ header {
     display: none;
 }
 
-.header-navbar .social-media {
+header nav .social-media {
     display: none;
 }
 
@@ -45,7 +45,7 @@ header {
         display: block;
     }
 
-    .header-navbar:has(.menu-toggle:checked) {
+    header nav:has(.menu-toggle:checked) {
         position: fixed;
         z-index: 2;
         background: rgb(36, 42, 69, 0.95);
@@ -86,7 +86,7 @@ header {
 
         }
 
-        .red-btn {
+        .red-cta {
             background-color: transparent;
             box-shadow: var(--button-shadow);
             border: 3px solid var(--white);
