@@ -4,8 +4,6 @@
 
 Este proyecto consiste en el desarrollo de la landing page de la extensión Bookmark basado en el diseño que aparece a continuación, con un enfoque en la práctica y el aprendizaje de HTML, CSS, Sass y Tailwind para maquetación y diseño responsive.
 
-![Screenshot](./images/desktop-design.jpg)  
-
 Ramas:
  - main (rama principal)
  - develop
