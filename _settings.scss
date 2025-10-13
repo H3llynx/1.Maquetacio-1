@@ -21,7 +21,20 @@ $transition: 0.4s;
         letter-spacing: 1.5px;
         font-size: 0.8rem;
         text-decoration: none;
-        transition: var(--transition);
+        transition: $transition;
         color: $text-color;
     }
+}
+
+@mixin button ($bg-color:$blue, $text-color: $white, $padding: 0.9rem 1.6rem) {
+    display: block;
+    padding: $padding;
+    font-size: 0.9rem;
+    transition: $transition;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px rgba(36, 42, 69, 0.2);
+    font-weight: 500;
+    background: $bg-color;
+    color: $text-color;
+    border: 2px solid transparent;
 }

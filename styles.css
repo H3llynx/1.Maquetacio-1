@@ -1,17 +1,138 @@
-/* Error: Undefined variable.
- *   ,
- * 8 |     outline: 2px solid $red;
- *   |                        ^^^^
- *   '
- *   styles.scss 8:24  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 8 \2502      outline: 2px solid $red;\a   \2502                         ^^^^\a   \2575 \a   styles.scss 8:24  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
 }
+
+*:focus-visible {
+  outline: 2px solid #fa5959;
+  outline-offset: 2px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #242A45;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 1.7rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  margin: 1.5rem auto;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0.8rem 0;
+}
+
+p {
+  color: #a7a7ac;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  padding: 3rem 0 2rem 0;
+  margin: auto;
+}
+header nav .social-media {
+  display: none;
+}
+
+.menu-toggle,
+.menu-label,
+.logo-menu {
+  display: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+header nav ul a {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: 0.4s;
+  color: #535260;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+footer nav ul a {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: 0.4s;
+  color: #ffffff;
+}
+
+button {
+  display: block;
+  padding: 0.9rem 1.6rem;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(36, 42, 69, 0.2);
+  font-weight: 500;
+  background: #5265E1;
+  color: #ffffff;
+  border: 2px solid transparent;
+}
+
+.red-btn {
+  display: block;
+  padding: 0.75rem 2.1rem;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(36, 42, 69, 0.2);
+  font-weight: 500;
+  background: #fa5959;
+  color: #ffffff;
+  border: 2px solid transparent;
+}
+
+.grey-btn {
+  display: block;
+  padding: 0.9rem 1.6rem;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(36, 42, 69, 0.2);
+  font-weight: 500;
+  background: #f7f7f7;
+  color: #535260;
+  border: 2px solid transparent;
+}
+
+/*# sourceMappingURL=styles.css.map */
