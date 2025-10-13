@@ -56,10 +56,6 @@ section {
         max-width: 400px;
         margin: 2.5rem auto;
     }
-
-    & button {
-        background-color: var(--red);
-    }
 }
 
 .decorated {
