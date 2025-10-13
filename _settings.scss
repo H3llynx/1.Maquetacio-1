@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+$white: #ffffff;
+$blue: #5265E1;
+$dark-blue: #242A45;
+$red: #fa5959;
+$dark-grey: #535260;
+$text-color: #a7a7ac;
+$transition: 0.4s;
+
+@mixin nav ($text-color: #535260){
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    a {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: var(--transition);
+        color: $text-color;
+    }
+}
