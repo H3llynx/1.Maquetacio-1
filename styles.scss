@@ -44,6 +44,15 @@ p {
     font-size: clamp(1rem, 2vw, 1.15rem);
     line-height: 1.5;
 }
+.social-media {
+    display: flex;
+    gap: 2.5rem;
+
+    & svg {
+        color: $white;
+        transition: $transition;
+    }
+}
 
 header {
     display: flex;
@@ -52,7 +61,7 @@ header {
     width: 80vw;
     padding: 3rem 0 2rem 0;
     margin: auto;
-     nav .social-media {display: none;}
+    .social-media {display: none;}
 }
 
 .menu-toggle,

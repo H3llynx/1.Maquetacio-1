@@ -44,6 +44,15 @@ p {
   line-height: 1.5;
 }
 
+.social-media {
+  display: flex;
+  gap: 2.5rem;
+}
+.social-media svg {
+  color: #ffffff;
+  transition: 0.4s;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -52,7 +61,7 @@ header {
   padding: 3rem 0 2rem 0;
   margin: auto;
 }
-header nav .social-media {
+header .social-media {
   display: none;
 }
 
