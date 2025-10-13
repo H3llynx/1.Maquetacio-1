@@ -10,8 +10,9 @@ $transition: 0.4s;
 $breakpoint-md: 1024px;
 $breakpoint-ms: 800px;
 $breakpoint-s: 600px;
+$width: 80vw;
 
-@mixin nav ($text-color: #535260){
+@mixin nav ($txt: #535260) {
     list-style: none;
     display: flex;
     gap: 3rem;
@@ -25,11 +26,17 @@ $breakpoint-s: 600px;
         font-size: 0.8rem;
         text-decoration: none;
         transition: $transition;
-        color: $text-color;
+        color: $txt;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                color: $red;
+            }
+        }
     }
 }
 
-@mixin button ($bg-color:$blue, $text-color: $white, $padding: 0.9rem 1.6rem) {
+@mixin button ($bg: $blue, $txt: $white, $padding: 0.9rem 1.6rem) {
     display: block;
     padding: $padding;
     font-size: 0.9rem;
@@ -37,7 +44,90 @@ $breakpoint-s: 600px;
     border-radius: 5px;
     box-shadow: 1px 2px 6px rgba(36, 42, 69, 0.2);
     font-weight: 500;
-    background: $bg-color;
-    color: $text-color;
+    background: $bg;
+    color: $txt;
     border: 2px solid transparent;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background: $white;
+            color: $bg;
+            border: 2px solid $bg;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-s) {
+        padding: 0.9rem 0.8rem;
+        font-weight: 600;
+        width: 100%;
+    }
+}
+
+@mixin form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: $width;
+    margin: auto;
+
+    @media screen and (max-width: $breakpoint-s) {
+        flex-direction: column;
+    }
+}
+
+@mixin email-input-validation {
+    position: relative;
+    border-radius: 5px;
+
+    .error-icon {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+
+    .error-msg {
+        display: none;
+    }
+
+    &:has(input[type="email"]:user-invalid) {
+        background: $red;
+
+        .error-icon {
+            display: block;
+        }
+
+        .error-msg {
+            display: block;
+            font-size: 0.7rem;
+            font-style: italic;
+            text-align: left;
+            vertical-align: center;
+            padding: 0.2rem 0.5rem;
+            color: $white;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-s) {
+        width: 100%;
+    }
+}
+
+@mixin form-field {
+    display: block;
+    padding: 0.9rem 1.6rem;
+    border-radius: 5px;
+    border: 0;
+    width: 300px;
+    font-size: 0.9rem;
+
+    &:user-invalid {
+        outline: none;
+        border: 2px solid $red;
+    }
+
+    @media screen and (max-width: $breakpoint-s) {
+        width: 100%;
+    }
 }

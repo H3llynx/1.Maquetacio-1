@@ -52,6 +52,16 @@ p {
   color: #ffffff;
   transition: 0.4s;
 }
+@media (hover: hover) and (pointer: fine) {
+  .social-media svg:hover {
+    color: #fa5959;
+  }
+}
+@media screen and (max-width: 800px) {
+  .social-media svg {
+    margin-top: 1rem;
+  }
+}
 
 header {
   display: flex;
@@ -61,16 +71,12 @@ header {
   padding: 3rem 0 2rem 0;
   margin: auto;
 }
+header .menu-toggle,
+header .menu-label,
+header .logo-menu,
 header .social-media {
   display: none;
 }
-
-.menu-toggle,
-.menu-label,
-.logo-menu {
-  display: none;
-}
-
 header nav ul {
   list-style: none;
   display: flex;
@@ -87,7 +93,94 @@ header nav ul a {
   transition: 0.4s;
   color: #535260;
 }
+@media (hover: hover) and (pointer: fine) {
+  header nav ul a:hover {
+    color: #fa5959;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .menu,
+  header #close-icon {
+    display: none;
+  }
+  header .menu-label {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  header .menu-toggle {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+  }
+  header .menu-toggle:checked ~ label #menu-icon {
+    display: none;
+  }
+  header .menu-toggle:checked ~ label #close-icon {
+    display: block;
+  }
+  header nav:has(.menu-toggle:checked) {
+    position: fixed;
+    z-index: 2;
+    background: rgba(36, 42, 69, 0.95);
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 3rem 10vw;
+  }
+  header nav:has(.menu-toggle:checked) #menu-icon {
+    display: none;
+  }
+  header nav:has(.menu-toggle:checked) #close-icon {
+    display: block;
+  }
+  header nav:has(.menu-toggle:checked) .logo-menu {
+    display: block;
+  }
+  header nav:has(.menu-toggle:checked) .social-media {
+    display: flex;
+    margin: auto;
+  }
+  header nav:has(.menu-toggle:checked) .menu {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  header nav:has(.menu-toggle:checked) .menu li {
+    border-top: 0.8px solid rgba(255, 255, 255, 0.25);
+    padding: 1.5rem 0;
+  }
+  header nav:has(.menu-toggle:checked) .menu a {
+    color: #ffffff;
+    font-size: 1.1rem;
+    display: block;
+  }
+  header nav:has(.menu-toggle:checked) .menu .red-btn {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
 
+footer {
+  background-color: #242A45;
+}
+footer .footer-container {
+  padding: 2rem;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.5rem;
+}
+footer nav {
+  margin-right: auto;
+}
 footer nav ul {
   list-style: none;
   display: flex;
@@ -104,6 +197,25 @@ footer nav ul a {
   transition: 0.4s;
   color: #ffffff;
 }
+@media (hover: hover) and (pointer: fine) {
+  footer nav ul a:hover {
+    color: #fa5959;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer .footer-container {
+    padding: 3rem 2rem;
+  }
+  footer .footer-container,
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  footer nav {
+    margin: 0;
+  }
+}
 
 button {
   display: block;
@@ -116,6 +228,20 @@ button {
   background: #5265E1;
   color: #ffffff;
   border: 2px solid transparent;
+}
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    background: #ffffff;
+    color: #5265E1;
+    border: 2px solid #5265E1;
+  }
+}
+@media screen and (max-width: 600px) {
+  button {
+    padding: 0.9rem 0.8rem;
+    font-weight: 600;
+    width: 100%;
+  }
 }
 
 .red-btn {
@@ -130,6 +256,20 @@ button {
   color: #ffffff;
   border: 2px solid transparent;
 }
+@media (hover: hover) and (pointer: fine) {
+  .red-btn:hover {
+    background: #ffffff;
+    color: #fa5959;
+    border: 2px solid #fa5959;
+  }
+}
+@media screen and (max-width: 600px) {
+  .red-btn {
+    padding: 0.9rem 0.8rem;
+    font-weight: 600;
+    width: 100%;
+  }
+}
 
 .grey-btn {
   display: block;
@@ -142,6 +282,102 @@ button {
   background: #f7f7f7;
   color: #535260;
   border: 2px solid transparent;
+}
+@media (hover: hover) and (pointer: fine) {
+  .grey-btn:hover {
+    background: #ffffff;
+    color: #f7f7f7;
+    border: 2px solid #f7f7f7;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grey-btn {
+    padding: 0.9rem 0.8rem;
+    font-weight: 600;
+    width: 100%;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .grey-btn:hover {
+    border-color: #535260;
+    color: #535260;
+  }
+}
+
+.centered-btn {
+  margin: auto;
+  width: auto;
+}
+@media screen and (max-width: 600px) {
+  .centered-btn {
+    padding: 0.9rem 1.4rem;
+  }
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 80vw;
+  margin: auto;
+}
+@media screen and (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+.txt-input-container {
+  position: relative;
+  border-radius: 5px;
+}
+.txt-input-container .error-icon {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.txt-input-container .error-msg {
+  display: none;
+}
+.txt-input-container:has(input[type=email]:user-invalid) {
+  background: #fa5959;
+}
+.txt-input-container:has(input[type=email]:user-invalid) .error-icon {
+  display: block;
+}
+.txt-input-container:has(input[type=email]:user-invalid) .error-msg {
+  display: block;
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: left;
+  vertical-align: center;
+  padding: 0.2rem 0.5rem;
+  color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .txt-input-container {
+    width: 100%;
+  }
+}
+
+input[type=email] {
+  display: block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 5px;
+  border: 0;
+  width: 300px;
+  font-size: 0.9rem;
+}
+input[type=email]:user-invalid {
+  outline: none;
+  border: 2px solid #fa5959;
+}
+@media screen and (max-width: 600px) {
+  input[type=email] {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
