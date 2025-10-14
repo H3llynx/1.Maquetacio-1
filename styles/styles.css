@@ -418,9 +418,14 @@ section {
   margin: auto;
 }
 section p {
-  max-width: 550px;
+  max-width: 40vw;
   text-align: center;
   margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  section p {
+    max-width: 80vw;
+  }
 }
 section {
   margin: auto;
@@ -432,9 +437,14 @@ section {
   margin: auto;
 }
 .full-width p {
-  max-width: 550px;
+  max-width: 40vw;
   text-align: center;
   margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .full-width p {
+    max-width: 80vw;
+  }
 }
 @media screen and (max-width: 800px) {
   .full-width p {
@@ -804,9 +814,14 @@ details[open] svg {
   margin: 6rem 0 0 0;
 }
 .newsletter p {
-  max-width: 550px;
+  max-width: 40vw;
   text-align: center;
   margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .newsletter p {
+    max-width: 80vw;
+  }
 }
 .newsletter {
   background: #5265E1;

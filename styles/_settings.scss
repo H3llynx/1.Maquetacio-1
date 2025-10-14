@@ -19,13 +19,17 @@ $width: 80vw;
     margin: $margin;
 
     p {
-        max-width: 550px;
+        max-width: 40vw;
         text-align: center;
         margin: auto;
+
+        @media screen and (max-width: $breakpoint-md) {
+            max-width: 80vw;
+        }
     }
 }
 
-@mixin nav ($txt: #535260) {
+@mixin nav ($txt: $dark-grey) {
     list-style: none;
     display: flex;
     align-items: center;
