@@ -5,7 +5,7 @@ button {
 }
 
 .red-btn {
-    @include button($red, $white, $padding: 0.75rem 2.1rem);
+    @include button($red, $white, $padding: 0.75rem 2rem);
 }
 
 .grey-btn {
