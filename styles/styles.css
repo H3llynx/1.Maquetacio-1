@@ -47,7 +47,7 @@ button {
 
 .red-btn {
   display: block;
-  padding: 0.75rem 2.1rem;
+  padding: 0.75rem 2rem;
   font-size: 0.9rem;
   transition: 0.4s;
   border-radius: 5px;
@@ -255,6 +255,9 @@ header {
   padding: 3rem 0 2rem 0;
   margin: auto;
 }
+header svg {
+  color: #242A45;
+}
 header .menu-toggle,
 header .menu-label,
 header .logo-menu,
@@ -365,6 +368,9 @@ footer .footer-container {
   justify-content: space-between;
   align-items: center;
   gap: 3.5rem;
+}
+footer .footer-container svg {
+  color: #ffffff;
 }
 @media screen and (max-width: 800px) {
   footer .footer-container {
