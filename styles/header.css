@@ -7,7 +7,7 @@ header {
     margin: auto;
 }
 
-.menu-toggle,
+#menu-toggle,
 .menu-label,
 .logo-menu {
     display: none;
@@ -30,22 +30,22 @@ header nav .social-media {
         z-index: 2;
     }
 
-    .menu-toggle {
+    #menu-toggle {
         display: block;
         position: absolute;
         opacity: 0;
         z-index: 3;
     }
 
-    .menu-toggle:checked~label #menu-icon {
+    #menu-toggle:checked~label #menu-icon {
         display: none;
     }
 
-    .menu-toggle:checked~label #close-icon {
+    #menu-toggle:checked~label #close-icon {
         display: block;
     }
 
-    header nav:has(.menu-toggle:checked) {
+    header nav:has(#menu-toggle:checked) {
         position: fixed;
         z-index: 2;
         background: rgb(36, 42, 69, 0.95);
