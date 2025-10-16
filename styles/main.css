@@ -26,7 +26,7 @@ section {
     margin: auto;
 
     & p {
-        max-width: 40vw;
+        max-width: 38vw;
         text-align: center;
         margin: auto;
     }
@@ -71,7 +71,7 @@ section {
 }
 
 .side-text {
-    width: 50%;
+    width: 45%;
     padding-left: 10vw;
 
     & p {
@@ -89,7 +89,7 @@ section {
 
     & img {
         padding: 0 2vw;
-        width: 50%;
+        width: 55%;
     }
 }
 
@@ -154,12 +154,13 @@ input[name="tab-features"] {
 }
 
 .tab-content .side-text {
-    padding: 0 10vw 0 5vw;
+    padding-right: 10vw;
+    padding-left: 5vw;
 }
 
 .tab-img {
     padding-left: 10vw;
-    width: 50%;
+    width: 55%;
 
     & img {
         width: 100%;
