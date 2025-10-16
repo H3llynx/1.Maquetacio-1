@@ -435,7 +435,7 @@ section {
 }
 
 .extension-container {
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -446,7 +446,6 @@ section {
     }
 
     @media screen and (max-width: $breakpoint-s) {
-        padding-top: 3rem;
         gap: 3.5rem;
     }
 }
