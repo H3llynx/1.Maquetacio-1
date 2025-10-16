@@ -485,7 +485,7 @@ section {
   }
 }
 .hero-section .side-text {
-  width: 50%;
+  width: 45%;
   padding: 0 0 0 10vw;
 }
 .hero-section .side-text p {
@@ -508,7 +508,7 @@ section {
 }
 .hero-section img {
   padding: 0 2vw;
-  width: 50%;
+  width: 55%;
 }
 @media screen and (max-width: 800px) {
   .hero-section img {
@@ -589,8 +589,8 @@ section {
   }
 }
 .tab-container .tab-content .side-text {
-  width: 50%;
-  padding: 0 10vw 0 5vw;
+  width: 45%;
+  padding: 0 10vw 0 3vw;
 }
 .tab-container .tab-content .side-text p {
   text-align: left;
@@ -621,7 +621,7 @@ section {
 }
 .tab-container .tab-content .tab-img {
   padding-left: 10vw;
-  width: 50%;
+  width: 55%;
 }
 .tab-container .tab-content .tab-img img {
   width: 100%;

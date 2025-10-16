@@ -267,7 +267,7 @@ section {
 
     img {
         padding: 0 2vw;
-        width: 50%;
+        width: 55%;
 
         @media screen and (max-width: $breakpoint-ms) {
             width: 100%;
@@ -351,7 +351,7 @@ section {
         }
 
         .side-text {
-            @include side-text(0 10vw 0 5vw);
+            @include side-text(0 10vw 0 3vw);
 
             .tab-btn {
                 margin: 2rem 0;
@@ -366,7 +366,7 @@ section {
 
         .tab-img {
             padding-left: 10vw;
-            width: 50%;
+            width: 55%;
 
             img {
                 width: 100%;
