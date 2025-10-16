@@ -22,7 +22,7 @@
         <img src="images/icon-close.svg" id="close-icon" alt="" class="hidden group-has-checked:block">
       </label>
       <ul
-        class="tracking-[1.5px] gap-3 hidden text-center text-grey-dark uppercase group-has-checked:block group-has-checked:w-full group-has-checked:mx-2 group-has-checked:text-white md:flex">
+        class="tracking-[1.5px] gap-3 hidden text-center text-grey-dark uppercase group-has-checked:block group-has-checked:w-full group-has-checked:mx-2 group-has-checked:text-white md:flex md:items-center">
         <li class="group-has-checked:py-1.5 group-has-checked:border-t-1 group-has-checked:border-border">
           <a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Features</a>
         </li>
@@ -33,7 +33,7 @@
           <a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Contact</a>
         </li>
         <li class="group-has-checked:py-1.5 group-has-checked:border-t-1 group-has-checked:border-border">
-          <a class="transition duration-400 group-has-checked:block group-has-checked:p-1 group-has-checked:border-2 group-has-checked:rounded-lg md:bg-red md:text-white md:rounded-md md:px-2 md:py-0.75 md:hover:bg-white md:hover:text-red border-2 md:border-red"
+          <a class="my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] md:py-[0.75rem] md:bg-red md:text-white md:hover:bg-white md:hover:text-red md:border-red group-has-checked:p-1 group-has-checked:border-2 group-has-checked:rounded-lg"
             href="#" tabindex="0">Login</a>
         </li>
       </ul>
@@ -63,12 +63,11 @@
     </section>
 
     <section class="w-[80vw] m-auto py-3">
-
       <h2 class="text-blue-dark text-[clamp(1.6rem,3vw,2rem)] my-1.5 text-center font-medium">Frequently Asked Questions
       </h2>
       <p class="m-auto text-center lg:max-w-[40vw]">Here are some of our FAQs. If you have any other questions you'd
         like answered please feel free to email us.</p>
-      <details class="group m-auto mt-3.5 max-w-[550px] py-1 border-b-1 border-separators sm:border-t-1">
+      <details class="group m-auto mt-3.5 max-w-[550px] py-[1.35rem] border-b-1 border-separators sm:border-t-1">
         <summary
           class="flex justify-between items-center cursor-pointer text-[clamp(1rem,2vw,1.15rem)] text-grey-dark transition duration-400 md:hover:text-red">
           What is Bookmark?
@@ -85,7 +84,7 @@
           quam. Vivamus eros sem, porta eget dolor id, porta ornare ipsum. Mauris ultricies maximus purus.</p>
       </details>
 
-      <details class="group m-auto max-w-[550px] py-1 border-b-1 border-separators">
+      <details class="group m-auto max-w-[550px] py-[1.35rem] border-b-1 border-separators">
         <summary
           class="flex justify-between items-center cursor-pointer text-[clamp(1rem,2vw,1.15rem)] text-grey-dark transition duration-400 md:hover:text-red">
           How can I request a new browser?
@@ -104,7 +103,7 @@
           at bibendum arcu sem sit amet diam. Praesent eu mollis erat, ut malesuada magna.</p>
       </details>
 
-      <details class="group m-auto max-w-[550px] py-1 border-b-1 border-separators">
+      <details class="group m-auto max-w-[550px] py-[1.35rem] border-b-1 border-separators">
         <summary
           class="flex justify-between items-center cursor-pointer text-[clamp(1rem,2vw,1.15rem)] text-grey-dark transition duration-400 md:hover:text-red">
           Is there a mobile app?
@@ -121,7 +120,7 @@
           facilisis dui vel bibendum hendrerit.</p>
       </details>
 
-      <details class="group m-auto mb-3.5 max-w-[550px] py-1 border-b-1 border-separators">
+      <details class="group m-auto mb-3.5 max-w-[550px] py-[1.35rem] border-b-1 border-separators">
         <summary
           class="flex justify-between items-center cursor-pointer text-[clamp(1rem,2vw,1.15rem)] text-grey-dark transition duration-400 md:hover:text-red">
           What about other Chromium browsers?
@@ -138,11 +137,34 @@
       </details>
 
       <button
-        class="block m-auto bg-blue font-medium text-sm text-white py-1 px-1.5 transition duration-400 rounded-md border-2 border-blue sm:px-1.6 md:hover:bg-white md:hover:text-blue">More
+        class="m-auto my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
         info</button>
-
     </section>
 
+    <section class="w-full m-auto py-4.5 mt-6 bg-blue text-center">
+
+      <span class="text-white uppercase font-medium text-xs tracking-[5px]">35.000+ already joined</span>
+      <h2
+        class="text-white text-[clamp(1.6rem,3vw,2rem)] my-1.5 text-center font-medium w-[80vw] max-w-[400px] m-auto my-2.5">
+        Stay up-to-date with what we're doing
+      </h2>
+      <form class="flex gap-1 items-start justify-center max-w-[80vw] m-auto flex-col sm:flex-row">
+        <div
+          class="group relative rounded-md has-user-invalid:bg-red has-user-invalid:border-2 has-user-invalid:border-red">
+          <input class="bg-white text-[0.9rem] rounded-md py-[0.9rem] px-[1.6rem] w-[80vw] sm:w-[300px]" type="email"
+            placeholder="Enter your email address" required>
+          <img src="./images/icon-error.svg" alt=""
+            class="hidden absolute right-[10px] top-[15px] group-has-user-invalid:block">
+          <p
+            class="hidden text-white text-[0.7rem] text-italic text-left py-[0.2rem] px-[0.5rem] group-has-user-invalid:block">
+            Whoops, make sure it's an
+            email</p>
+        </div>
+        <button type="submit"
+          class="my-button text-white py-[0.9rem] px-[0.8rem] md:px-[1.6rem] md:py-[0.75rem] bg-red border-red w-full md:w-auto md:hover:bg-white md:hover:text-red">Contact
+          us</button>
+
+    </section>
   </main>
 
   <footer class=" bg-blue-dark text-white">

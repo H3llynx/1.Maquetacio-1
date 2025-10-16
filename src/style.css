@@ -28,3 +28,21 @@
     }
   }
 }
+
+.my-button {
+  display: block;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(36, 42, 69, 0.2);
+  font-weight: 500;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .my-button {
+    font-weight: 600;
+  }
+}
