@@ -76,7 +76,7 @@ header {
     padding: 3rem 0 2rem 0;
     margin: auto;
 
-    .menu-toggle,
+    #menu-toggle,
     .menu-label,
     .logo-menu,
     .social-media {
@@ -104,22 +104,22 @@ header {
             z-index: 2;
         }
 
-        .menu-toggle {
+        #menu-toggle {
             display: block;
             position: absolute;
             opacity: 0;
             z-index: 3;
         }
 
-        .menu-toggle:checked~label #menu-icon {
+        #menu-toggle:checked~label #menu-icon {
             display: none;
         }
 
-        .menu-toggle:checked~label #close-icon {
+        #menu-toggle:checked~label #close-icon {
             display: block;
         }
 
-        nav:has(.menu-toggle:checked) {
+        nav:has(#menu-toggle:checked) {
             position: fixed;
             z-index: 2;
             background: rgb(36, 42, 69, 0.95);
@@ -542,7 +542,11 @@ details {
 
     h2 {
         color: $white;
-        max-width: 400px;
+        max-width: 30vw;
         margin: 2.5rem auto;
+
+        @media screen and (max-width: $breakpoint-md) {
+            max-width: 80vw;
+        }
     }
 }

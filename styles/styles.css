@@ -254,7 +254,7 @@ header {
   padding: 3rem 0 2rem 0;
   margin: auto;
 }
-header .menu-toggle,
+header #menu-toggle,
 header .menu-label,
 header .logo-menu,
 header .social-media {
@@ -295,19 +295,19 @@ header nav ul .red-btn {
     position: relative;
     z-index: 2;
   }
-  header .menu-toggle {
+  header #menu-toggle {
     display: block;
     position: absolute;
     opacity: 0;
     z-index: 3;
   }
-  header .menu-toggle:checked ~ label #menu-icon {
+  header #menu-toggle:checked ~ label #menu-icon {
     display: none;
   }
-  header .menu-toggle:checked ~ label #close-icon {
+  header #menu-toggle:checked ~ label #close-icon {
     display: block;
   }
-  header nav:has(.menu-toggle:checked) {
+  header nav:has(#menu-toggle:checked) {
     position: fixed;
     z-index: 2;
     background: rgba(36, 42, 69, 0.95);
@@ -318,34 +318,34 @@ header nav ul .red-btn {
     flex-wrap: wrap;
     padding: 3rem 10vw;
   }
-  header nav:has(.menu-toggle:checked) #menu-icon {
+  header nav:has(#menu-toggle:checked) #menu-icon {
     display: none;
   }
-  header nav:has(.menu-toggle:checked) #close-icon {
+  header nav:has(#menu-toggle:checked) #close-icon {
     display: block;
   }
-  header nav:has(.menu-toggle:checked) .logo-menu {
+  header nav:has(#menu-toggle:checked) .logo-menu {
     display: block;
   }
-  header nav:has(.menu-toggle:checked) .social-media {
+  header nav:has(#menu-toggle:checked) .social-media {
     display: flex;
     margin: auto;
   }
-  header nav:has(.menu-toggle:checked) .menu {
+  header nav:has(#menu-toggle:checked) .menu {
     display: block;
     width: 100%;
     margin: 2rem 0;
   }
-  header nav:has(.menu-toggle:checked) .menu li {
+  header nav:has(#menu-toggle:checked) .menu li {
     border-top: 0.8px solid rgba(255, 255, 255, 0.25);
     padding: 1.5rem 0;
   }
-  header nav:has(.menu-toggle:checked) .menu a {
+  header nav:has(#menu-toggle:checked) .menu a {
     color: #ffffff;
     font-size: 1.1rem;
     display: block;
   }
-  header nav:has(.menu-toggle:checked) .menu .red-btn {
+  header nav:has(#menu-toggle:checked) .menu .red-btn {
     background-color: transparent;
     border: 3px solid #ffffff;
     padding: 1rem;
@@ -829,8 +829,13 @@ details[open] svg {
 }
 .newsletter h2 {
   color: #ffffff;
-  max-width: 400px;
+  max-width: 30vw;
   margin: 2.5rem auto;
+}
+@media screen and (max-width: 1024px) {
+  .newsletter h2 {
+    max-width: 80vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
