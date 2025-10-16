@@ -83,7 +83,6 @@ input[type="email"] {
             font-size: 0.7rem;
             font-style: italic;
             text-align: left;
-            vertical-align: center;
             padding: 0.2rem 0.5rem;
             color: var(--white);
         }
