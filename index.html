@@ -55,15 +55,43 @@
   <main class="text-[clamp(1rem,2vw,1.15rem)]">
 
     <section class="w-[80vw] m-auto py-3">
-
-      <h2 class="text-blue-dark text-[clamp(1.6rem,3vw,2rem)] my-1.5 text-center font-medium">Download the extension
+      <h2 class="text-blue-dark">Download the extension
       </h2>
       <p class="m-auto text-center lg:max-w-[40vw]">We've got more browsers in the pipeline. Please do let us know if
         you've got a favourite you'd like us to prioritize.</p>
+      <div class="pt-3 p-2 flex justify-center items-start gap-3.5 flex-wrap lg:flex-nowrap md:pt-2 sm:gap-2">
+        <div class="card">
+          <img src="./images/logo-chrome.svg" class="mt-auto" alt="">
+          <h3>Add to Chrome</h3>
+          <p class="text-[0.9rem]">Minimum version 62</p>
+          <img src="./images/bg-dots.svg" alt="" class="mx-0 my-auto w-full">
+          <button
+            class="my-button w-[83%] py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue"
+            tabindex="0">Add & Install Extension</button>
+        </div>
+        <div class="card lg:mt-2">
+          <img src="./images/logo-firefox.svg" class="mt-auto" alt="">
+          <h3>Add to Firefox</h3>
+          <p class="text-[0.9rem]">Minimum version 55</p>
+          <img src="./images/bg-dots.svg" alt="" class="mx-0 my-auto w-full">
+          <button
+            class="my-button w-[83%] py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue"
+            tabindex="0">Add & Install Extension</button>
+        </div>
+        <div class="card lg:mt-4">
+          <img src="./images/logo-opera.svg" class="mt-auto" alt="">
+          <h3>Add to Opera</h3>
+          <p class="text-[0.9rem]">Minimum version 46</p>
+          <img src="./images/bg-dots.svg" alt="" class="mx-0 my-auto w-full">
+          <button
+            class="my-button w-[83%] py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue"
+            tabindex="0">Add & Install Extension</button>
+        </div>
+      </div>
     </section>
 
     <section class="w-[80vw] m-auto py-3">
-      <h2 class="text-blue-dark text-[clamp(1.6rem,3vw,2rem)] my-1.5 text-center font-medium">Frequently Asked Questions
+      <h2 class="text-blue-dark">Frequently Asked Questions
       </h2>
       <p class="m-auto text-center lg:max-w-[40vw]">Here are some of our FAQs. If you have any other questions you'd
         like answered please feel free to email us.</p>
@@ -83,7 +111,6 @@
           turpis egestas. Sed consequat sed est ac bibendum. Vivamus sed viverra risus, non ultricies
           quam. Vivamus eros sem, porta eget dolor id, porta ornare ipsum. Mauris ultricies maximus purus.</p>
       </details>
-
       <details class="group m-auto max-w-[550px] py-[1.35rem] border-b-1 border-separators">
         <summary
           class="flex justify-between items-center cursor-pointer text-[clamp(1rem,2vw,1.15rem)] text-grey-dark transition duration-400 md:hover:text-red">
@@ -102,7 +129,6 @@
           ullamcorper malesuada. Aliquam auctor, urna vitae facilisis accumsan, lacus elit laoreet libero,
           at bibendum arcu sem sit amet diam. Praesent eu mollis erat, ut malesuada magna.</p>
       </details>
-
       <details class="group m-auto max-w-[550px] py-[1.35rem] border-b-1 border-separators">
         <summary
           class="flex justify-between items-center cursor-pointer text-[clamp(1rem,2vw,1.15rem)] text-grey-dark transition duration-400 md:hover:text-red">
@@ -119,7 +145,6 @@
           fringilla congue. Donec augue eros, ultrices eget faucibus non, vulputate et metus. Etiam
           facilisis dui vel bibendum hendrerit.</p>
       </details>
-
       <details class="group m-auto mb-3.5 max-w-[550px] py-[1.35rem] border-b-1 border-separators">
         <summary
           class="flex justify-between items-center cursor-pointer text-[clamp(1rem,2vw,1.15rem)] text-grey-dark transition duration-400 md:hover:text-red">
@@ -135,17 +160,14 @@
           nulla, vitae tempor eros efficitur sit amet. Nullam mauris magna, suscipit at tempor non,
           interdum in lorem.</p>
       </details>
-
       <button
         class="m-auto my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
         info</button>
     </section>
 
     <section class="w-full m-auto py-4.5 mt-6 bg-blue text-center">
-
       <span class="text-white uppercase font-medium text-xs tracking-[5px]">35.000+ already joined</span>
-      <h2
-        class="text-white text-[clamp(1.6rem,3vw,2rem)] my-1.5 text-center font-medium w-[80vw] max-w-[400px] m-auto my-2.5">
+      <h2 class="text-white w-[80vw] max-w-[400px] m-auto my-2.5">
         Stay up-to-date with what we're doing
       </h2>
       <form class="flex gap-1 items-start justify-center max-w-[80vw] m-auto flex-col sm:flex-row">
@@ -163,12 +185,11 @@
         <button type="submit"
           class="my-button text-white py-[0.9rem] px-[0.8rem] md:px-[1.6rem] md:py-[0.75rem] bg-red border-red w-full md:w-auto md:hover:bg-white md:hover:text-red">Contact
           us</button>
-
     </section>
   </main>
 
-  <footer class=" bg-blue-dark text-white">
-    <div class="w-[80vw] m-auto flex flex-col align-center gap-3.5 py-3 md:py-2 md:justify-between md:flex-row">
+  <footer class="bg-blue-dark text-white">
+    <div class="w-[80vw] m-auto flex flex-col items-center gap-3.5 py-3 md:py-2 md:justify-between md:flex-row">
 
       <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Bookmark logo" class="m-auto md:m-0">
         <g fill="none" fill-rule="evenodd">
