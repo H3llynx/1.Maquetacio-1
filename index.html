@@ -17,7 +17,7 @@
       class="group z-0 text-sm has-checked:fixed has-checked:inset-0 has-checked:bg-blue-menu has-checked:flex has-checked:justify-between has-checked:flex-wrap has-checked:items-start has-checked:py-3 has-checked:px-[10vw]">
       <img src="images/logo-bookmark-menu.svg" alt="bookmark logo" class="hidden group-has-checked:block">
       <label for="menu-toggle" aria-label="open/close menu" class="relative">
-        <input type="checkbox" class="absolute z-2 opacity-0" />
+        <input type="checkbox" class="absolute z-2 opacity-0" id="menu-toggle" />
         <img src="images/icon-hamburger.svg" id="menu-icon" alt="" class="group-has-checked:hidden md:hidden">
         <img src="images/icon-close.svg" id="close-icon" alt="" class="hidden group-has-checked:block">
       </label>
@@ -61,6 +61,64 @@
         your
         favourite websites. Your bookmarks sync
         between your devices so you can access them on the go.</p>
+
+      <div class="flex flex-wrap justify-center pt-3" role="tablist" aria-label="Bookmark features">
+
+        <input class="absolute opacity-1 peer border z-4" type="radio" id="tab1" name="tab-features" tabindex="0"
+          checked>
+        <input class="absolute opacity-1 peer" type="radio" id="tab2" name="tab-features" tabindex="0">
+        <input class="absolute opacity-1 peer" type="radio" id="tab3" name="tab-features" tabindex="0">
+        <label
+          class="block py-[1.5rem] px-[3rem] text-grey-md text-base cursor-pointer tracking-[1px] align-center relative z-0 transition duration-1200 w-[80vw] md:mb-4 md:w-auto"
+          for="tab1" id="label1" role="tab" aria-controls="organize-bm">Simple
+          Bookmarking</label>
+        <label
+          class="block py-[1.5rem] px-[3rem] text-grey-md text-base cursor-pointer tracking-[1px] align-center relative z-0 transition duration-1200 w-[80vw] md:mb-4 md:w-auto"
+          for="tab2" id="label2" role="tab" aria-controls="intelligent-search">Speedy
+          Searching</label>
+        <label
+          class="block py-[1.5rem] px-[3rem] text-grey-md text-base cursor-pointer tracking-[1px] align-center relative z-0 transition duration-1200 w-[80vw] md:mb-4 md:w-auto"
+          for="tab3" id="label3" role="tab" aria-controls="share-bm">Easy
+          Sharing</label>
+
+        <article class="decorated tab-content" id="organize-bm">
+          <div class="side-text">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you
+              complete
+              control over how you manage your favourite sites.</p>
+            <button class="tab-btn" tabindex="0">More info</button>
+          </div>
+          <div class="tab-img">
+            <img src="./images/illustration-features-tab-1.svg" alt="">
+          </div>
+        </article>
+        <article class="decorated tab-content" id="intelligent-search" hidden>
+          <div class="side-text">
+            <h2>Intelligent search</h2>
+            <p>Our powerful search feature will help you find saved sites in no time at all. No need to
+              trawl
+              through all of your bookmarks.</p>
+            <button class="tab-btn" tabindex="0">More info</button>
+          </div>
+          <div class="tab-img">
+            <img src="./images/illustration-features-tab-2.svg" alt="">
+          </div>
+        </article>
+        <article class="decorated tab-content" id="share-bm" hidden>
+          <div class="side-text">
+            <h2>Share your bookmarks</h2>
+            <p>Easily share your bookmarks and collections with other. Create a shareable link that you can
+              send
+              at the click of a button.</p>
+            <button class="tab-btn" tabindex="0">More info</button>
+          </div>
+          <div class="tab-img">
+            <img src="./images/illustration-features-tab-3.svg" alt="">
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <section class="w-[80vw] m-auto py-3">
@@ -68,7 +126,7 @@
       </h2>
       <p class="m-auto text-center lg:max-w-[40vw]">We've got more browsers in the pipeline. Please do let us know if
         you've got a favourite you'd like us to prioritize.</p>
-      <div class="pt-3 p-2 flex justify-center items-start gap-3.5 flex-wrap lg:flex-nowrap md:pt-2 sm:gap-2">
+      <div class="pt-3 p-2 flex justify-center items-start gap-3.5 flex-wrap lg:flex-nowrap sm:gap-2">
         <div class="card">
           <img src="./images/logo-chrome.svg" class="mt-auto" alt="">
           <h3>Add to Chrome</h3>
@@ -113,7 +171,7 @@
             <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
           </svg>
         </summary>
-        <p class="pt-2 text-faq-p text-[clamp(0.9rem,2vw,1rem)] group-open:animate-fadeIn">
+        <p class="pt-2 text-grey-md text-[clamp(0.9rem,2vw,1rem)] group-open:animate-fadeIn">
           Integer vulputate diam id blandit dapibus. Curabitur auctor elit nec magna tristique tempus.
           Curabitur ornare, odio vel sagittis consequat, erat justo posuere felis, ut consectetur lorem
           tellus in justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
