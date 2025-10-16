@@ -210,7 +210,7 @@ input[name="tab-features"] {
 }
 
 .extension-container {
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -410,7 +410,6 @@ summary {
 
 @media screen and (max-width: 600px) {
     .extension-container {
-        padding-top: 3rem;
         gap: 3.5rem;
     }
 
