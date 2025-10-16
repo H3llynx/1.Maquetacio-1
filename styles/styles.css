@@ -155,7 +155,6 @@ form {
   font-size: 0.7rem;
   font-style: italic;
   text-align: left;
-  vertical-align: center;
   padding: 0.2rem 0.5rem;
   color: #ffffff;
 }
@@ -695,7 +694,7 @@ section {
 }
 
 .extension-container {
-  padding: 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -708,7 +707,6 @@ section {
 }
 @media screen and (max-width: 600px) {
   .extension-container {
-    padding-top: 3rem;
     gap: 3.5rem;
   }
 }
@@ -793,7 +791,6 @@ details:first-of-type {
 }
 @media screen and (max-width: 600px) {
   details:first-of-type {
-    margin-top: 3.5rem;
     border-top: 0;
   }
 }
