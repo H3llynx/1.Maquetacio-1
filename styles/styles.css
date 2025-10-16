@@ -445,11 +445,6 @@ section {
     max-width: 80vw;
   }
 }
-@media screen and (max-width: 800px) {
-  .full-width p {
-    width: 80vw;
-  }
-}
 
 .decorated {
   display: flex;
