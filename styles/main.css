@@ -76,7 +76,6 @@ section {
 
     & p {
         text-align: left;
-        max-width: unset;
     }
 
     & h2 {
@@ -314,10 +313,6 @@ summary {
 }
 
 @media screen and (max-width: 1024px) {
-    section p {
-        max-width: 80vw;
-    }
-
     .extension-container {
         flex-wrap: wrap;
 
@@ -328,10 +323,6 @@ summary {
 }
 
 @media screen and (max-width: 800px) {
-    .full-width p {
-        max-width: 80vw;
-    }
-
     .decorated {
         flex-direction: column-reverse;
         gap: 3rem;
