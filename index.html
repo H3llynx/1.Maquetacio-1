@@ -14,7 +14,7 @@
   <header class="flex justify-between items-center w-[80vw] m-auto pt-3 pb-2">
     <img src="images/logo-bookmark.svg" alt="bookmark logo">
     <nav
-      class="group z-0 text-sm has-checked:fixed has-checked:inset-0 has-checked:bg-blue-menu has-checked:flex has-checked:justify-between has-checked:flex-wrap has-checked:items-start has-checked:py-3 has-checked:px-[10vw]">
+      class="group z-1 text-sm has-checked:fixed has-checked:inset-0 has-checked:bg-blue-menu has-checked:flex has-checked:justify-between has-checked:flex-wrap has-checked:items-start has-checked:py-3 has-checked:px-[10vw]">
       <img src="images/logo-bookmark-menu.svg" alt="bookmark logo" class="hidden group-has-checked:block">
       <label for="menu-toggle" aria-label="open/close menu" class="relative">
         <input type="checkbox" class="absolute z-2 opacity-0" id="menu-toggle" />
@@ -85,11 +85,10 @@
           md:mb-4 peer-checked/tab3:text-blue-dark peer-checked/tab3:after:absolute peer-checked/tab3:after:w-full peer-checked/tab3:after:left-0 peer-checked/tab3:after:bottom-0 peer-checked/tab3:after:h-[3px] peer-checked/tab3:after:bg-red peer-checked/tab3:after:animate-tabs">Easy
           Sharing</label>
 
-        <article class="hidden peer-checked/tab1:flex flex-col md:flex-row">
-          <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
-            <img class="w-full object-contain aspect-[7/5] md:object-top-right"
-              src="/images/illustration-features-tab-1.svg" alt="">
-          </div>
+        <article class="relative hidden peer-checked/tab1:flex w-full flex-col-reverse md:flex-row-reverse gap-3
+          before:absolute before:left-0 before:top-[8%] before:w-[82%] before:aspect-[16/10]
+          before:bg-blue before:z-[-1] md:before:aspect-[16/8] before:rounded-r-[12rem]
+          md:before:left-[-10vw] md:before:top-[20%] md:before:w-[53%] md:before:aspect-[16/8]">
           <div class="w-[80vw] m-auto md:w-[45%] md:pr-[10vw] md:pl-[3vw]">
             <h2 class="text-blue-dark md:text-left">Bookmark in one click</h2>
             <p class="md:text-left">Organize your bookmarks however you like. Our simple drag-and-drop interface gives
@@ -99,6 +98,10 @@
             <button
               class="hidden md:block my-button my-2 py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
               info</button>
+          </div>
+          <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
+            <img class="w-full object-contain aspect-[7/5] md:object-top-right"
+              src="/images/illustration-features-tab-1.svg" alt="">
           </div>
         </article>
         <article class="hidden peer-checked/tab2:flex flex-col md:flex-row">
@@ -251,7 +254,7 @@
 
     <section class="w-full m-auto py-4.5 mt-6 bg-blue text-center">
       <span class="text-white uppercase font-medium text-xs tracking-[5px]">35.000+ already joined</span>
-      <h2 class="text-white w-[80vw] max-w-[30vw] m-auto my-2.5 text-center">
+      <h2 class="text-white w-[80vw] md:max-w-[30vw] m-auto my-2.5 text-center">
         Stay up-to-date with what we're doing
       </h2>
       <form class="flex gap-1 items-start justify-center max-w-[80vw] m-auto flex-col sm:flex-row">
