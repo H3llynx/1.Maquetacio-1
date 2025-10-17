@@ -62,10 +62,10 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
           tab and see your sites load instantly. Try it for free.</p>
         <div class="flex gap-[1.2rem] mt-2 justify-center md:justify-start">
           <button tabindex="0"
-            class="my-button my-2 py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">
+            class="my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">
             Get it on Chrome</button>
           <button tabindex="0"
-            class="my-button my-2 py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-grey-btn text-grey-dark border-grey-btn md:hover:bg-white md:hover:border-grey-dark">
+            class="my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-grey-btn text-grey-dark border-grey-btn md:hover:bg-white md:hover:border-grey-dark">
             Get it on Firefox</button>
         </div>
       </div>
@@ -73,7 +73,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
     </section>
 
     <section class="w-full m-auto py-4.5 text-center">
-      <h2 class="text-blue-dark text-center">Features
+      <h2 class="my-1.5 text-blue-dark text-center">Features
       </h2>
       <p class="w-[80vw] m-auto text-center lg:max-w-[40vw]">Our aim is to make it quick and easy for you to access
         your
@@ -82,25 +82,33 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
       <div class="flex flex-wrap justify-center pt-3" role="tablist" aria-label="Bookmark features">
         <input tabindex="0" type="radio" id="tab1" name="tab" class="sr-only peer/tab1" checked />
         <label for="tab1"
-          class="relative py-[1.5rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
+          class="relative py-[1rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
           tracking-[1px] w-[80vw] border-t-1 border-b-1 border-separators md:w-auto md:border-t-0
-          md:mb-4 peer-checked/tab1:text-blue-dark peer-checked/tab1:after:absolute peer-checked/tab1:after:w-full peer-checked/tab1:after:left-0 peer-checked/tab1:after:bottom-0 peer-checked/tab1:after:h-[3px] peer-checked/tab1:after:bg-red peer-checked/tab1:after:animate-tabs">Simple
+          md:mb-4 peer-checked/tab1:text-blue-dark peer-checked/tab1:after:absolute peer-checked/tab1:after:w-full
+          peer-checked/tab1:after:bottom-0 peer-checked/tab1:after:h-[3px] peer-checked/tab1:after:bg-red
+          peer-checked/tab1:after:translate-x-[-50%] peer-checked/tab1:md:after:translate-none peer-checked/tab1:after:left-[50%]
+          peer-checked/tab1:md:after:left-0 peer-checked/tab1:after:animate-tabs-45 peer-checked/tab1:md:after:animate-tabs">Simple
           Bookmarking</label>
 
         <input tabindex="0" type="radio" id="tab2" name="tab" class="sr-only peer/tab2" />
         <label for="tab2"
-          class="relative py-[1.5rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
-          tracking-[1px] w-[80vw] border-b-1 border-separators md:w-auto
-          md:mb-4 peer-checked/tab2:text-blue-dark peer-checked/tab2:after:absolute peer-checked/tab2:after:w-full peer-checked/tab2:after:left-0 peer-checked/tab2:after:bottom-0 peer-checked/tab2:after:h-[3px] peer-checked/tab2:after:bg-red peer-checked/tab2:after:animate-tabs">Speedy
+          class="relative py-[1rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
+          tracking-[1px] w-[80vw] border-b-1 border-separators md:w-auto md:border-t-0
+          md:mb-4 peer-checked/tab2:text-blue-dark peer-checked/tab2:after:absolute peer-checked/tab2:after:w-full
+          peer-checked/tab2:after:bottom-0 peer-checked/tab2:after:h-[3px] peer-checked/tab2:after:bg-red
+          peer-checked/tab2:after:translate-x-[-50%] peer-checked/tab2:md:after:translate-none peer-checked/tab2:after:left-[50%]
+          peer-checked/tab2:md:after:left-0 peer-checked/tab2:after:animate-tabs-45 peer-checked/tab2:md:after:animate-tabs">Speedy
           Searching</label>
 
         <input tabindex="0" type="radio" id="tab3" name="tab" class="sr-only peer/tab3" />
         <label for="tab3"
-          class="relative py-[1.5rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
-          tracking-[1px] w-[80vw] mb-5 md:mb-0 border-b-1 border-separators md:w-auto
-          md:mb-4 peer-checked/tab3:text-blue-dark peer-checked/tab3:after:absolute peer-checked/tab3:after:w-full peer-checked/tab3:after:left-0 peer-checked/tab3:after:bottom-0 peer-checked/tab3:after:h-[3px] peer-checked/tab3:after:bg-red peer-checked/tab3:after:animate-tabs">Easy
-          Sharing</label>
-
+          class="relative py-[1rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
+          tracking-[1px] w-[80vw] mb-5 md:mb-0 border-b-1 border-separators md:w-auto md:border-t-0
+          md:mb-4 peer-checked/tab3:text-blue-dark peer-checked/tab3:after:absolute peer-checked/tab3:after:w-full
+          peer-checked/tab3:after:bottom-0 peer-checked/tab3:after:h-[3px] peer-checked/tab3:after:bg-red
+          peer-checked/tab3:after:translate-x-[-50%] peer-checked/tab3:md:after:translate-none peer-checked/tab3:after:left-[50%]
+          peer-checked/tab3:md:after:left-0 peer-checked/tab3:after:animate-tabs-45 peer-checked/tab3:md:after:animate-tabs">
+          Easy Sharing</label>
         <article
           class="relative hidden w-full flex-col-reverse md:flex-row-reverse gap-3 md:gap-2
          peer-checked/tab1:flex peer-checked/tab1:before:absolute peer-checked/tab1:before:left-0
@@ -109,7 +117,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
          peer-checked/tab1:md:before:top-[20%] peer-checked/tab1:md:before:w-[50%] peer-checked/tab1:md:before:aspect-[15/8]">
 
           <div class="w-[80vw] m-auto md:w-[45%] md:pr-[10vw] md:pl-[3vw] animate-tab-content">
-            <h2 class="text-blue-dark md:text-left">Bookmark in one click</h2>
+            <h2 class="my-1.5 text-blue-dark md:text-left">Bookmark in one click</h2>
             <p class="md:text-left">Organize your bookmarks however you like. Our simple drag-and-drop interface gives
               you
               complete
@@ -130,7 +138,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
          peer-checked/tab2:before:top-[8%] peer-checked/tab2:before:w-[82%] peer-checked/tab2:before:aspect-[16/10]
          peer-checked/tab2:md:before:top-[20%] peer-checked/tab2:md:before:w-[50%] peer-checked/tab2:md:before:aspect-[15/8]">
           <div class="w-[80vw] m-auto md:w-[45%] md:pr-[10vw] md:pl-[3vw] animate-tab-content">
-            <h2 class="text-blue-dark md:text-left">Intelligent search
+            <h2 class="my-1.5 text-blue-dark md:text-left">Intelligent search
             </h2>
             <p class="md:text-left">Our powerful search feature will help you find saved sites in no time at all. No
               need to
@@ -152,7 +160,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
          peer-checked/tab3:before:top-[8%] peer-checked/tab3:before:w-[82%] peer-checked/tab3:before:aspect-[16/10]
          peer-checked/tab3:md:before:top-[20%] peer-checked/tab3:md:before:w-[50%] peer-checked/tab3:md:before:aspect-[15/8]">
           <div class="w-[80vw] m-auto md:w-[45%] md:pr-[10vw] md:pl-[3vw] animate-tab-content">
-            <h2 class="text-blue-dark md:text-left">Share your bookmarks
+            <h2 class="my-1.5 text-blue-dark md:text-left">Share your bookmarks
             </h2>
             <p class="md:text-left">Easily share your bookmarks and collections with other. Create a shareable link that
               you can
@@ -171,7 +179,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
     </section>
 
     <section class="w-[80vw] m-auto py-3 text-center">
-      <h2 class="text-blue-dark">Download the extension
+      <h2 class="my-1.5 text-blue-dark">Download the extension
       </h2>
       <p class="m-auto lg:max-w-[40vw]">We've got more browsers in the pipeline. Please do let us know if
         you've got a favourite you'd like us to prioritize.</p>
@@ -207,7 +215,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
     </section>
 
     <section class="w-[80vw] m-auto py-3">
-      <h2 class="text-blue-dark text-center">Frequently Asked Questions
+      <h2 class="my-1.5 text-blue-dark text-center">Frequently Asked Questions
       </h2>
       <p class="m-auto text-center lg:max-w-[40vw]">Here are some of our FAQs. If you have any other questions you'd
         like answered please feel free to email us.</p>
@@ -283,7 +291,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
 
     <section class="w-full m-auto py-4.5 mt-6 bg-blue text-center">
       <span class="text-white uppercase font-medium text-xs tracking-[5px]">35.000+ already joined</span>
-      <h2 class="text-white w-[80vw] md:max-w-[30vw]">
+      <h2 class="text-white w-[80vw] m-auto md:max-w-[30vw] mt-0.5 mb-2 md:my-2.5">
         Stay up-to-date with what we're doing
       </h2>
       <form class="flex gap-1 items-start justify-center max-w-[80vw] m-auto flex-col sm:flex-row">
