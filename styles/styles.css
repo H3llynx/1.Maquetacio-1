@@ -838,5 +838,10 @@ details[open] svg {
     max-width: 80vw;
   }
 }
+@media screen and (max-width: 800px) {
+  .newsletter h2 {
+    margin: 1rem auto 2rem auto;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

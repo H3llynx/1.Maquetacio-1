@@ -549,5 +549,9 @@ details {
         @media screen and (max-width: $breakpoint-md) {
             max-width: 80vw;
         }
+
+        @media screen and (max-width: $breakpoint-ms) {
+            margin: 1rem auto 2rem auto;
+        }
     }
 }
