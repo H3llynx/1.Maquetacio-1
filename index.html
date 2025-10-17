@@ -33,7 +33,7 @@
           <a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Contact</a>
         </li>
         <li class="group-has-checked:py-1.5 group-has-checked:border-t-1 group-has-checked:border-border">
-          <a class="my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] md:py-[0.75rem] md:bg-red md:text-white md:hover:bg-white md:hover:text-red md:border-red group-has-checked:p-1 group-has-checked:border-2 group-has-checked:rounded-lg"
+          <a class="block my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] md:py-[0.75rem] md:bg-red md:text-white md:hover:bg-white md:hover:text-red md:border-red group-has-checked:p-1 group-has-checked:border-2 group-has-checked:rounded-lg"
             href="#" tabindex="0">Login</a>
         </li>
       </ul>
@@ -55,74 +55,91 @@
   <main class="text-[clamp(1rem,2vw,1.15rem)]">
 
     <section class="w-full m-auto py-4.5 text-center">
-      <h2 class="text-blue-dark">Features
+      <h2 class="text-blue-dark text-center">Features
       </h2>
       <p class="w-[80vw] m-auto text-center lg:max-w-[40vw]">Our aim is to make it quick and easy for you to access
         your
         favourite websites. Your bookmarks sync
         between your devices so you can access them on the go.</p>
 
-      <div class="flex flex-wrap justify-center pt-3" role="tablist" aria-label="Bookmark features">
 
-        <input class="absolute opacity-1 peer border z-4" type="radio" id="tab1" name="tab-features" tabindex="0"
-          checked>
-        <input class="absolute opacity-1 peer" type="radio" id="tab2" name="tab-features" tabindex="0">
-        <input class="absolute opacity-1 peer" type="radio" id="tab3" name="tab-features" tabindex="0">
-        <label
-          class="block py-[1.5rem] px-[3rem] text-grey-md text-base cursor-pointer tracking-[1px] align-center relative z-0 transition duration-1200 w-[80vw] md:mb-4 md:w-auto"
-          for="tab1" id="label1" role="tab" aria-controls="organize-bm">Simple
+      <div class="flex flex-wrap justify-center pt-3" role="tablist" aria-label="Bookmark features">
+        <input type="radio" id="tab1" name="tab" class="sr-only peer/tab1" checked />
+        <label for="tab1"
+          class="relative py-[1.5rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
+          tracking-[1px] w-[80vw] border-t-1 border-b-1 border-separators md:w-auto md:border-t-0
+          md:mb-4 peer-checked/tab1:text-blue-dark peer-checked/tab1:after:absolute peer-checked/tab1:after:w-full peer-checked/tab1:after:left-0 peer-checked/tab1:after:bottom-0 peer-checked/tab1:after:h-[3px] peer-checked/tab1:after:bg-red peer-checked/tab1:after:animate-tabs">Simple
           Bookmarking</label>
-        <label
-          class="block py-[1.5rem] px-[3rem] text-grey-md text-base cursor-pointer tracking-[1px] align-center relative z-0 transition duration-1200 w-[80vw] md:mb-4 md:w-auto"
-          for="tab2" id="label2" role="tab" aria-controls="intelligent-search">Speedy
+
+        <input type="radio" id="tab2" name="tab" class="sr-only peer/tab2" />
+        <label for="tab2"
+          class="relative py-[1.5rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
+          tracking-[1px] w-[80vw] border-b-1 border-separators md:w-auto
+          md:mb-4 peer-checked/tab2:text-blue-dark peer-checked/tab2:after:absolute peer-checked/tab2:after:w-full peer-checked/tab2:after:left-0 peer-checked/tab2:after:bottom-0 peer-checked/tab2:after:h-[3px] peer-checked/tab2:after:bg-red peer-checked/tab2:after:animate-tabs">Speedy
           Searching</label>
-        <label
-          class="block py-[1.5rem] px-[3rem] text-grey-md text-base cursor-pointer tracking-[1px] align-center relative z-0 transition duration-1200 w-[80vw] md:mb-4 md:w-auto"
-          for="tab3" id="label3" role="tab" aria-controls="share-bm">Easy
+
+        <input type="radio" id="tab3" name="tab" class="sr-only peer/tab3" />
+        <label for="tab3"
+          class="relative py-[1.5rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
+          tracking-[1px] w-[80vw] mb-5 md:mb-0 border-b-1 border-separators md:w-auto
+          md:mb-4 peer-checked/tab3:text-blue-dark peer-checked/tab3:after:absolute peer-checked/tab3:after:w-full peer-checked/tab3:after:left-0 peer-checked/tab3:after:bottom-0 peer-checked/tab3:after:h-[3px] peer-checked/tab3:after:bg-red peer-checked/tab3:after:animate-tabs">Easy
           Sharing</label>
 
-        <article class="decorated tab-content" id="organize-bm">
-          <div class="side-text">
-            <h2>Bookmark in one click</h2>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you
+        <article class="hidden peer-checked/tab1:flex flex-col md:flex-row">
+          <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
+            <img class="w-full object-contain aspect-[7/5] md:object-top-right"
+              src="/images/illustration-features-tab-1.svg" alt="">
+          </div>
+          <div class="w-[80vw] m-auto md:w-[45%] md:pr-[10vw] md:pl-[3vw]">
+            <h2 class="text-blue-dark md:text-left">Bookmark in one click</h2>
+            <p class="md:text-left">Organize your bookmarks however you like. Our simple drag-and-drop interface gives
+              you
               complete
               control over how you manage your favourite sites.</p>
-            <button class="tab-btn" tabindex="0">More info</button>
-          </div>
-          <div class="tab-img">
-            <img src="./images/illustration-features-tab-1.svg" alt="">
+            <button
+              class="hidden md:block my-button my-2 py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
+              info</button>
           </div>
         </article>
-        <article class="decorated tab-content" id="intelligent-search" hidden>
-          <div class="side-text">
-            <h2>Intelligent search</h2>
-            <p>Our powerful search feature will help you find saved sites in no time at all. No need to
+        <article class="hidden peer-checked/tab2:flex flex-col md:flex-row">
+          <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
+            <img class="w-full object-contain aspect-[7/5] md:object-top-right"
+              src="/images/illustration-features-tab-2.svg" alt="">
+          </div>
+          <div class="w-[80vw] m-auto md:w-[45%] md:pr-[10vw] md:pl-[3vw]">
+            <h2 class="text-blue-dark md:text-left">Intelligent search
+            </h2>
+            <p class="md:text-left">Our powerful search feature will help you find saved sites in no time at all. No
+              need to
               trawl
               through all of your bookmarks.</p>
-            <button class="tab-btn" tabindex="0">More info</button>
-          </div>
-          <div class="tab-img">
-            <img src="./images/illustration-features-tab-2.svg" alt="">
+            <button
+              class="hidden md:block my-button my-2 py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
+              info</button>
           </div>
         </article>
-        <article class="decorated tab-content" id="share-bm" hidden>
-          <div class="side-text">
-            <h2>Share your bookmarks</h2>
-            <p>Easily share your bookmarks and collections with other. Create a shareable link that you can
+        <article class="hidden peer-checked/tab3:flex flex-col md:flex-row">
+          <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
+            <img class="w-full object-contain aspect-[7/5] md:object-top-right"
+              src="/images/illustration-features-tab-3.svg" alt="">
+          </div>
+          <div class="w-[80vw] m-auto md:w-[45%] md:pr-[10vw] md:pl-[3vw]">
+            <h2 class="text-blue-dark md:text-left">Share your bookmarks
+            </h2>
+            <p class="md:text-left">Easily share your bookmarks and collections with other. Create a shareable link that
+              you can
               send
               at the click of a button.</p>
-            <button class="tab-btn" tabindex="0">More info</button>
-          </div>
-          <div class="tab-img">
-            <img src="./images/illustration-features-tab-3.svg" alt="">
+            <button
+              class="hidden md:block my-button my-2 py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
+              info</button>
           </div>
         </article>
-
       </div>
     </section>
 
     <section class="w-[80vw] m-auto py-3">
-      <h2 class="text-blue-dark">Download the extension
+      <h2 class="text-blue-dark text-center">Download the extension
       </h2>
       <p class="m-auto text-center lg:max-w-[40vw]">We've got more browsers in the pipeline. Please do let us know if
         you've got a favourite you'd like us to prioritize.</p>
@@ -158,7 +175,7 @@
     </section>
 
     <section class="w-[80vw] m-auto py-3">
-      <h2 class="text-blue-dark">Frequently Asked Questions
+      <h2 class="text-blue-dark text-center">Frequently Asked Questions
       </h2>
       <p class="m-auto text-center lg:max-w-[40vw]">Here are some of our FAQs. If you have any other questions you'd
         like answered please feel free to email us.</p>
@@ -228,13 +245,13 @@
           interdum in lorem.</p>
       </details>
       <button
-        class="m-auto my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
+        class="block m-auto my-button py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
         info</button>
     </section>
 
     <section class="w-full m-auto py-4.5 mt-6 bg-blue text-center">
       <span class="text-white uppercase font-medium text-xs tracking-[5px]">35.000+ already joined</span>
-      <h2 class="text-white w-[80vw] max-w-[400px] m-auto my-2.5">
+      <h2 class="text-white w-[80vw] max-w-[30vw] m-auto my-2.5 text-center">
         Stay up-to-date with what we're doing
       </h2>
       <form class="flex gap-1 items-start justify-center max-w-[80vw] m-auto flex-col sm:flex-row">
@@ -250,7 +267,7 @@
             email</p>
         </div>
         <button type="submit"
-          class="my-button text-white py-[0.9rem] px-[0.8rem] md:px-[1.6rem] md:py-[0.75rem] bg-red border-red w-full md:w-auto md:hover:bg-white md:hover:text-red">Contact
+          class="block my-button text-white py-[0.9rem] px-[0.8rem] md:px-[1.6rem] md:py-[0.75rem] bg-red border-red w-full md:w-auto md:hover:bg-white md:hover:text-red">Contact
           us</button>
     </section>
   </main>
