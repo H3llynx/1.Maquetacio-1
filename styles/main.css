@@ -35,6 +35,7 @@ section {
 .full-width {
     width: 100vw;
     padding: 4.5rem 0;
+    border: 1px solid red;
 }
 
 .newsletter {
@@ -405,6 +406,10 @@ summary {
 
     .cta-area {
         justify-content: center;
+    }
+
+    .newsletter h2 {
+        margin: 1rem auto 2rem auto;
     }
 }
 
