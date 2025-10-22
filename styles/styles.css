@@ -801,25 +801,25 @@ details[open] svg {
   color: #fa5959;
 }
 
-.newsletter {
+#newsletter {
   width: 100vw;
   padding: 4.5rem 0;
   margin: 6rem 0 0 0;
 }
-.newsletter p {
+#newsletter p {
   max-width: 40vw;
   text-align: center;
   margin: auto;
 }
 @media screen and (max-width: 1024px) {
-  .newsletter p {
+  #newsletter p {
     max-width: 80vw;
   }
 }
-.newsletter {
+#newsletter {
   background: #5265E1;
 }
-.newsletter span {
+#newsletter span {
   display: block;
   text-align: center;
   letter-spacing: 5px;
@@ -828,18 +828,18 @@ details[open] svg {
   color: #ffffff;
   font-weight: 500;
 }
-.newsletter h2 {
+#newsletter h2 {
   color: #ffffff;
   max-width: 30vw;
   margin: 2.5rem auto;
 }
 @media screen and (max-width: 1024px) {
-  .newsletter h2 {
+  #newsletter h2 {
     max-width: 80vw;
   }
 }
 @media screen and (max-width: 800px) {
-  .newsletter h2 {
+  #newsletter h2 {
     margin: 1rem auto 2rem auto;
   }
 }
