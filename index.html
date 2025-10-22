@@ -11,7 +11,7 @@
 
 <body class="text-grey font-rubik bg-white">
   <header class="flex justify-between items-center w-[80vw] m-auto pt-3 pb-2">
-    <img src="images/logo-bookmark.svg" alt="bookmark logo">
+    <img loading="lazy" src="images/logo-bookmark.svg" alt="Bookmark logo">
 
     <nav class="group z-1 text-lg md:text-sm flex justify-between
       has-checked:fixed has-checked:inset-0 has-checked:bg-blue-menu
@@ -26,13 +26,13 @@
       <ul class="tracking-[1.5px] uppercase text-center text-grey-dark hidden leading-none gap-3 md:flex md:items-center
         group-has-checked:block group-has-checked:w-full group-has-checked:text-white group-has-checked:my-2">
         <li class="group-has-checked:py-1.5 group-has-checked:border-t-[0.8px] group-has-checked:border-border">
-          <a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Features</a>
+          <a href="#features" class="md:hover:text-red transition duration-400" tabindex="0">Features</a>
         </li>
         <li class="group-has-checked:py-1.5 group-has-checked:border-t-[0.8px] group-has-checked:border-border">
           <a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Pricing</a>
         </li>
         <li class="group-has-checked:py-1.5 group-has-checked:border-t-[0.8px] group-has-checked:border-border">
-          <a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Contact</a>
+          <a href="#newsletter" class="md:hover:text-red transition duration-400" tabindex="0">Contact</a>
         </li>
         <li class="group-has-checked:py-1.5 group-has-checked:border-t-[0.8px] group-has-checked:border-border">
           <a class="my-button py-[0.9rem] px-[0.8rem] md:px-[2rem] md:py-[0.75rem]
@@ -75,7 +75,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
       </div>
       <img class="px-[5vw] md:px-[2vw] w-full md:w-[55%]" src="/images/illustration-hero.svg" alt="">
     </section>
-    <section class="w-full m-auto py-4.5 text-center">
+    <section id="features" class="w-full m-auto py-4.5 text-center">
       <h2 class="my-1.5 text-blue-dark text-center">Features
       </h2>
       <p class="w-[80vw] m-auto text-center lg:max-w-[40vw]">Our aim is to make it quick and easy for you to access
@@ -84,7 +84,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
         between your devices so you can access them on the go.</p>
       <div class="flex flex-wrap justify-center pt-3" role="tablist" aria-label="Bookmark features">
         <input tabindex="0" type="radio" id="tab1" name="tab" class="sr-only peer/tab1" checked />
-        <label for="tab1"
+        <label for="tab1" aria-controls="organize-bm"
           class="relative py-[1rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
           tracking-[1px] w-[80vw] border-t-1 border-b-1 border-separators md:w-auto md:border-t-0
           md:mb-4 peer-checked/tab1:text-blue-dark peer-checked/tab1:after:absolute peer-checked/tab1:after:w-full
@@ -94,7 +94,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
           Bookmarking</label>
 
         <input tabindex="0" type="radio" id="tab2" name="tab" class="sr-only peer/tab2" />
-        <label for="tab2"
+        <label for="tab2" aria-controls="intelligent-search"
           class="relative py-[1rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
           tracking-[1px] w-[80vw] border-b-1 border-separators md:w-auto md:border-t-0
           md:mb-4 peer-checked/tab2:text-blue-dark peer-checked/tab2:after:absolute peer-checked/tab2:after:w-full
@@ -104,7 +104,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
           Searching</label>
 
         <input tabindex="0" type="radio" id="tab3" name="tab" class="sr-only peer/tab3" />
-        <label for="tab3"
+        <label for="tab3" aria-controls="share-bm"
           class="relative py-[1rem] px-[3rem] text-grey-md transition duration-1200 text-base cursor-pointer
           tracking-[1px] w-[80vw] mb-5 md:mb-0 border-b-1 border-separators md:w-auto md:border-t-0
           md:mb-4 peer-checked/tab3:text-blue-dark peer-checked/tab3:after:absolute peer-checked/tab3:after:w-full
@@ -112,7 +112,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
           peer-checked/tab3:after:translate-x-[-50%] peer-checked/tab3:md:after:translate-none peer-checked/tab3:after:left-[50%]
           peer-checked/tab3:md:after:left-0 peer-checked/tab3:after:animate-tabs-45 peer-checked/tab3:md:after:animate-tabs">
           Easy Sharing</label>
-        <article
+        <article id="organize-bm"
           class="relative hidden w-full flex-col-reverse md:flex-row-reverse gap-3 md:gap-2
          peer-checked/tab1:flex peer-checked/tab1:before:absolute peer-checked/tab1:before:left-0
          peer-checked/tab1:before:z-[-1] peer-checked/tab1:before:bg-blue peer-checked/tab1:before:rounded-r-[12rem]
@@ -130,11 +130,12 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
               info</button>
           </div>
           <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
-            <img class="w-full object-contain aspect-[7/5] object-top md:object-top-right animate-tab-content"
+            <img loading="lazy"
+              class="w-full object-contain aspect-[7/5] object-top md:object-top-right animate-tab-content"
               src="/images/illustration-features-tab-1.svg" alt="">
           </div>
         </article>
-        <article
+        <article id="intelligent-search"
           class="relative hidden w-full flex-col-reverse md:flex-row-reverse gap-3 md:gap-2
          peer-checked/tab2:flex peer-checked/tab2:before:absolute peer-checked/tab2:before:left-0
          peer-checked/tab2:before:z-[-1] peer-checked/tab2:before:bg-blue peer-checked/tab2:before:rounded-r-[12rem]
@@ -152,11 +153,12 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
               info</button>
           </div>
           <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
-            <img class="w-full object-contain aspect-[7/5] object-top md:object-top-right animate-tab-content"
+            <img loading="lazy"
+              class="w-full object-contain aspect-[7/5] object-top md:object-top-right animate-tab-content"
               src="/images/illustration-features-tab-2.svg" alt="">
           </div>
         </article>
-        <article
+        <article id="share-bm"
           class="relative hidden w-full flex-col-reverse md:flex-row-reverse gap-3 md:gap-2
          peer-checked/tab3:flex peer-checked/tab3:before:absolute peer-checked/tab3:before:left-0
          peer-checked/tab3:before:z-[-1] peer-checked/tab3:before:bg-blue peer-checked/tab3:before:rounded-r-[12rem]
@@ -174,7 +176,8 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
               info</button>
           </div>
           <div class="w-[80vw] m-auto md:w-[55%] md:pl-[10vw]">
-            <img class="w-full object-contain aspect-[7/5] object-top md:object-top-right animate-tab-content"
+            <img loading="lazy"
+              class="w-full object-contain aspect-[7/5] object-top md:object-top-right animate-tab-content"
               src="/images/illustration-features-tab-3.svg" alt="">
           </div>
         </article>
@@ -187,28 +190,28 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
         you've got a favourite you'd like us to prioritize.</p>
       <div class="pt-3 p-2 flex justify-center items-start gap-3.5 flex-wrap lg:flex-nowrap sm:gap-2">
         <div class="card">
-          <img src="/images/logo-chrome.svg" class="mt-auto" alt="">
+          <img loading="lazy" src="/images/logo-chrome.svg" class="mt-auto" alt="">
           <h3>Add to Chrome</h3>
           <p class="text-[0.9rem]">Minimum version 62</p>
-          <img src="/images/bg-dots.svg" alt="" class="mx-0 my-auto w-full">
+          <img src="/images/bg-dots.svg" alt="Chrome logo" class="mx-0 my-auto w-full">
           <button
             class="my-button text-sm font-medium w-[83%] py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue"
             tabindex="0">Add & Install Extension</button>
         </div>
         <div class="card lg:mt-2">
-          <img src="/images/logo-firefox.svg" class="mt-auto" alt="">
+          <img loading="lazy" src="/images/logo-firefox.svg" class="mt-auto" alt="">
           <h3>Add to Firefox</h3>
           <p class="text-[0.9rem]">Minimum version 55</p>
-          <img src="/images/bg-dots.svg" alt="" class="mx-0 my-auto w-full">
+          <img src="/images/bg-dots.svg" alt="Firefox logo" class="mx-0 my-auto w-full">
           <button
             class="my-button text-sm font-medium w-[83%] py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue"
             tabindex="0">Add & Install Extension</button>
         </div>
         <div class="card lg:mt-4">
-          <img src="/images/logo-opera.svg" class="mt-auto" alt="">
+          <img loading="lazy" src="/images/logo-opera.svg" class="mt-auto" alt="">
           <h3>Add to Opera</h3>
           <p class="text-[0.9rem]">Minimum version 46</p>
-          <img src="/images/bg-dots.svg" alt="" class="mx-0 my-auto w-full">
+          <img src="/images/bg-dots.svg" alt="Opera logo" class="mx-0 my-auto w-full">
           <button
             class="my-button text-sm font-medium w-[83%] py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue"
             tabindex="0">Add & Install Extension</button>
@@ -289,7 +292,7 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
         class="block m-auto my-button text-sm font-medium py-[0.9rem] px-[0.8rem] md:px-[1.6rem] bg-blue text-white border-blue md:hover:bg-white md:hover:text-blue">More
         info</button>
     </section>
-    <section class="w-full m-auto py-4.5 mt-6 bg-blue text-center">
+    <section id="newsletter" class="w-full m-auto py-4.5 mt-6 bg-blue text-center">
       <span class="text-white uppercase font-medium text-xs tracking-[5px]">35.000+ already joined</span>
       <h2 class="text-white w-[80vw] m-auto md:max-w-[30vw] mt-0.5 mb-2 md:my-2.5">
         Stay up-to-date with what we're doing
@@ -327,9 +330,9 @@ before:w-[82%] before:aspect-[16/10] md:before:top-[35%] md:before:w-[38%]">
       </svg>
       <nav class="md:mr-auto tracking-[1.5px] text-xs md:text-sm">
         <ul class="gap-2 text-center uppercase text-white flex flex-col md:flex-row md:gap-3">
-          <li><a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Features</a></li>
+          <li><a href="#features" class="md:hover:text-red transition duration-400" tabindex="0">Features</a></li>
           <li><a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Pricing</a></li>
-          <li><a href="#" class="md:hover:text-red transition duration-400" tabindex="0">Contact</a></li>
+          <li><a href="#newsletter" class="md:hover:text-red transition duration-400" tabindex="0">Contact</a></li>
         </ul>
       </nav>
       <div class="flex gap-2.5 mt-1 mx-auto md:m-0">
