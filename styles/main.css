@@ -37,7 +37,7 @@ section {
     padding: 4.5rem 0;
 }
 
-.newsletter {
+#newsletter {
     background: var(--blue);
     margin-top: 6rem;
 
@@ -325,7 +325,7 @@ summary {
         }
     }
 
-    .newsletter h2 {
+    #newsletter h2 {
         max-width: 80vw;
     }
 }
@@ -407,7 +407,7 @@ summary {
         justify-content: center;
     }
 
-    .newsletter h2 {
+    #newsletter h2 {
         margin: 1rem auto 2rem auto;
     }
 }
